@@ -54,7 +54,7 @@ if(ann&&!sessionStorage.getItem('ann-x')){
     const draw=()=>{const a=items[i];p.textContent=a.text+' ';
       if(a.link){const l=document.createElement('a');l.href=a.link;l.textContent=a.label||'بیشتر';p.append(l)}};
     const next=()=>{p.classList.add('out');setTimeout(()=>{i=(i+1)%items.length;draw();p.classList.remove('out')},400)};
-    const play=()=>{if(items.length>1)t=setInterval(next,5000)};
+    const play=()=>{if(items.length>1)t=setInterval(next,8000)};
     draw();ann.hidden=false;play();
     ann.onmouseenter=()=>clearInterval(t);ann.onmouseleave=play;
   }).catch(()=>{});
