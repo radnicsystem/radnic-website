@@ -441,7 +441,7 @@ input, textarea {
 
 .ann a {
   color: var(--ac);
-  text-decoration: underline
+  text-decoration: none
 }
 
 .ann button {
