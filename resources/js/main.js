@@ -66,7 +66,7 @@ if(sl){
   const tr=sl.querySelector('.track'),n=tr.children.length,dots=sl.querySelector('.dots');let i=0,t;
   const go=k=>{i=(k+n)%n;tr.style.transform='translateX('+i*100+'%)';[...dots.children].forEach((d,x)=>d.classList.toggle('on',x===i))};
   for(let k=0;k<n;k++){const d=document.createElement('button');d.setAttribute('aria-label','تصویر '+(k+1));d.onclick=()=>go(k);dots.append(d)}
-  const play=()=>{if(!matchMedia('(prefers-reduced-motion:reduce)').matches)t=setInterval(()=>go(i+1),5000)};
+  const play=()=>{if(!matchMedia('(prefers-reduced-motion:reduce)').matches)t=setInterval(()=>go(i+1),8000)};
   sl.querySelector('.next').onclick=()=>go(i+1);sl.querySelector('.prev').onclick=()=>go(i-1);
   sl.onmouseenter=()=>clearInterval(t);sl.onmouseleave=play;
   let x0;sl.ontouchstart=e=>x0=e.touches[0].clientX;
