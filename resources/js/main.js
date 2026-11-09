@@ -83,3 +83,13 @@ if(bd)fetch('resources/database/badges.html').then(r=>r.ok?r.text():'').then(h=>
   scripts.forEach(o=>{const s=document.createElement('script');
     [...o.attributes].forEach(a=>s.setAttribute(a.name,a.value));s.textContent=o.textContent;bd.append(s)});
 }).catch(()=>{bd.parentElement.hidden=true});
+// enrollment page: show the chosen course
+const ec=$('#enr-course');
+if(ec){
+  const t = {
+    1:'علوم کامپیوتر',
+    2:'شبکه‌های کامپیوتری',
+    3:'زیرساخت کامپیوتر'
+  }[new URLSearchParams(location.search).get('course')];
+  if(typeof t==='string'){ec.textContent='دوره انتخاب‌شده: '+t;ec.hidden=false}
+}
