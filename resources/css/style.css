@@ -675,3 +675,83 @@ input, textarea {
     width: 80px
   }
 }
+
+.enr {
+  max-width: 620px;
+  margin: 1rem auto
+}
+
+.enr-card {
+  text-align: center;
+  padding: 2.4rem 2rem;
+  border-radius: 26px;
+  border: 1px solid var(--bd);
+  background: linear-gradient(180deg,var(--c1),#fff 55%);
+  box-shadow: 0 12px 36px rgba(30,43,58,.07)
+}
+
+.enr-ic {
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  color: var(--brand);
+  box-shadow: 0 4px 14px rgba(70,130,180,.18)
+}
+
+.enr-ic svg {
+  width: 32px;
+  height: 32px
+}
+
+.enr-card h1 {
+  font-size: clamp(1.5rem,4vw,2rem);
+  margin-bottom: .6rem
+}
+
+.enr-chip {
+  display: inline-block;
+  padding: .1rem 1rem;
+  border-radius: 99px;
+  background: var(--c1);
+  color: var(--ac);
+  font-size: .92rem;
+  margin-bottom: .8rem
+}
+
+.enr-msg {
+  font-size: 1.08rem;
+  line-height: 2.1
+}
+
+.enr-num {
+  display: inline-block;
+  padding: 0 .8rem;
+  border-radius: 99px;
+  background: var(--c2);
+  color: var(--ac);
+  font-weight: 700;
+  letter-spacing: .5px
+}
+
+.enr-note {
+  display: flex;
+  gap: .6rem;
+  align-items: flex-start;
+  text-align: right;
+  margin: 1.5rem 0;
+  padding: .9rem 1.1rem;
+  border-radius: 16px;
+  background: var(--c3)
+}
+
+.enr-note svg {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  color: var(--ac);
+  margin-top: .35rem
+}
