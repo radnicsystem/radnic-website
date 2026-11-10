@@ -89,7 +89,7 @@ nav a:hover, nav a.on {
 }
 
 .wrap {
-  max-width: 1050px;
+  max-width: 1500px;
   margin: auto;
   padding: 3rem 5%
 }
@@ -99,7 +99,7 @@ nav a:hover, nav a.on {
   grid-template-columns: 1.2fr 1fr;
   gap: 2rem;
   align-items: center;
-  max-width: 1050px;
+  max-width: 1500px;
   margin: auto;
   padding: 5rem 5%
 }
