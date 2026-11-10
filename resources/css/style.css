@@ -96,7 +96,7 @@ nav a:hover, nav a.on {
 
 .hero {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1.3fr 1fr;
   gap: 2rem;
   align-items: center;
   max-width: 1500px;
