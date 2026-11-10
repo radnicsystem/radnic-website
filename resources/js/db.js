@@ -1,6 +1,7 @@
 /* Data layer backed by Google Sheets through an Apps Script web app.
    Paste your deployed web app URL (ends with /exec) below. */
-const API='PASTE_YOUR_WEB_APP_URL_HERE';
+
+const API='https://script.google.com/macros/s/AKfycbyIXyfaTBODUTpyv_wyzWuiwjmlNjaejIML9i8tpyNSq3J3iBVIAH9iPNKYyUyTOezU/exec';
 const DB={
   T:'danesh_token',
   async call(body){
