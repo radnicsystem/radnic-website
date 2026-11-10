@@ -140,6 +140,7 @@ function handle(r) {
 }
 
 // Emails you when a contact message arrives. The message is already saved in the sheet, so a mail failure loses nothing.
+
 function notify(name, email, text) {
   const cache = CacheService.getScriptCache(), k = 'mail:all', n = Number(cache.get(k) || 0);
   if (n >= 20) return; // at most 20 notifications per hour, to protect your daily email quota
@@ -154,4 +155,5 @@ function notify(name, email, text) {
 }
 
 // Run this once from the editor to grant the "send email" permission.
+
 function authorize() { Session.getEffectiveUser().getEmail(); return MailApp.getRemainingDailyQuota(); }
