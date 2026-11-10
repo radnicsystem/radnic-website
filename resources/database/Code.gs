@@ -1,5 +1,6 @@
 /* Google Apps Script backend: the bound Google Sheet is the database.
    Sheets "users" and "messages" are created automatically on first use. */
+
 const SS = SpreadsheetApp.getActive();
 const NOTIFY_TO = ''; // email that receives contact-form notifications; leave empty to use your own Gmail address
 const fail = m => ({ ok: false, m });
@@ -97,7 +98,7 @@ function handle(r) {
       cache.put('rc:' + email, JSON.stringify({ salt, h: hash(code, salt) }), 900); // valid for 15 minutes
       cache.remove('rt:' + email);
       MailApp.sendEmail({
-        to: email, subject: 'کد بازیابی رمز عبور - دانش‌رایان',
+        to: email, subject: 'کد بازیابی رمز عبور - رادنیک سیستم',
         body: 'کد بازیابی رمز عبور شما: ' + code + '\nاین کد ۱۵ دقیقه معتبر است. اگر شما درخواست نداده‌اید، این ایمیل را نادیده بگیرید.',
         htmlBody: '<div dir="rtl" style="font-family:Tahoma,sans-serif"><p>کد بازیابی رمز عبور شما:</p><p style="font-size:26px;letter-spacing:4px"><b dir="ltr">' + code + '</b></p><p>این کد ۱۵ دقیقه معتبر است. اگر شما درخواست نداده‌اید، این ایمیل را نادیده بگیرید.</p></div>'
       });
