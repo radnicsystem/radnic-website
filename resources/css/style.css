@@ -546,6 +546,12 @@ input, textarea {
   grid-template-columns: repeat(auto-fit,minmax(min(100%,330px),1fr))
 }
 
+.c-cgrid {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,550px),1fr))
+}
+
 .cc {
   display: flex;
   gap: 1.1rem;
@@ -564,6 +570,14 @@ input, textarea {
 .cc img {
   flex: none;
   width: 120px;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 14px
+}
+
+.c-cc img {
+  flex: none;
+  width: 200px;
   height: auto;
   aspect-ratio: 1;
   border-radius: 14px
