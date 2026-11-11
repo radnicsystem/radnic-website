@@ -575,7 +575,7 @@ input, textarea {
   border-radius: 14px
 }
 
-img .cp-img {
+img.cp-img {
   width: 220px;
 }
 
