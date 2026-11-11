@@ -569,14 +569,10 @@ input, textarea {
 
 .cc img {
   flex: none;
-  width: 120px;
+  width: 220px;
   height: auto;
   aspect-ratio: 1;
   border-radius: 14px
-}
-
-img.cp-img {
-  width: 220px;
 }
 
 .cc h3 {
